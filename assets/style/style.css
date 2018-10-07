@@ -133,12 +133,12 @@ p{
 .column{
     padding-top: 20px;
     float: left;
-    width: 320px;
+    width: 300px;
 }
 
 .portfolioImage{
-    width: 290px;
-    height: 200px;
+    max-width: 90%;
+    height: auto;
 }
 
 .portfolioProject:hover{
@@ -154,7 +154,7 @@ p{
     top: -93px;
     line-height: 64px;
     text-align: center;
-    width: 290px;
+    max-width:90%;
 }
 /* end of styles specifically for "Portfolio" page */
 
@@ -193,18 +193,26 @@ p{
 /* media queries */
 @media screen and (max-width:980px){
     #mainContent{
-        width:620px;
+        width:630px;
         margin-left:50px;
     }
 
     #topContentLeft{       
         margin-left:70px;
     }
+
+    .textField{
+        width:100%;
+    }
+
+    .textBox{
+        width:100%;
+    }
 }
 
 @media screen and (max-width:768px){
     #topContent{
-        width:480px;
+        width:96%;
         margin-left:10px;
     }
     
@@ -213,9 +221,8 @@ p{
         padding-left:0px;
     }
     #mainContent{
-        width:420px;  
+        width:90%;  
         margin-left:15px;
-
     }
 
     #topContentLeft{
@@ -225,6 +232,7 @@ p{
     #topContentRight{
         margin-right:15px;
     }
+
 }
 
 @media screen and (max-width:640px){
